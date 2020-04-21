@@ -1,0 +1,82 @@
+---
+:source:
+  :path: test
+  :file: test_led.c
+:successes:
+- :test: test_LedsOffAfterCreate
+  :line: 18
+  :message: ''
+  :unity_test_time: 0
+- :test: test_AllOff
+  :line: 25
+  :message: ''
+  :unity_test_time: 0
+- :test: test_AllOn
+  :line: 32
+  :message: ''
+  :unity_test_time: 0
+- :test: test_MultipleOnOff
+  :line: 39
+  :message: ''
+  :unity_test_time: 0
+- :test: test_IsOn
+  :line: 46
+  :message: ''
+  :unity_test_time: 0
+- :test: test_On1
+  :line: 54
+  :message: ''
+  :unity_test_time: 0
+- :test: test_On16
+  :line: 60
+  :message: ''
+  :unity_test_time: 0
+- :test: test_Off1
+  :line: 66
+  :message: ''
+  :unity_test_time: 0
+- :test: test_Off16
+  :line: 73
+  :message: ''
+  :unity_test_time: 0
+- :test: test_IsOn1
+  :line: 80
+  :message: ''
+  :unity_test_time: 0
+- :test: test_IsOn16
+  :line: 87
+  :message: ''
+  :unity_test_time: 0
+- :test: test_On0
+  :line: 95
+  :message: ''
+  :unity_test_time: 0
+- :test: test_On17
+  :line: 101
+  :message: ''
+  :unity_test_time: 0
+- :test: test_Off0
+  :line: 107
+  :message: ''
+  :unity_test_time: 0
+- :test: test_Off17
+  :line: 114
+  :message: ''
+  :unity_test_time: 0
+- :test: test_IsOn0
+  :line: 121
+  :message: ''
+  :unity_test_time: 0
+- :test: test_IsOn17
+  :line: 128
+  :message: ''
+  :unity_test_time: 0
+:failures: []
+:ignores: []
+:counts:
+  :total: 17
+  :passed: 17
+  :failed: 0
+  :ignored: 0
+:stdout: []
+:time: 0.001733083998260554
