@@ -42,16 +42,14 @@ void test_MultipleOnOff() {
     Leds_Off(2);
     TEST_ASSERT_EQUAL_HEX16(1 << (5 - 1), leds);
 }
-// testeo el estado de 1 led
-void test_IsOn() {
-    const int led = 2;
-    TEST_ASSERT_EQUAL_INT(false, Leds_IsOn(led));
-    Leds_On(led);
-    TEST_ASSERT_EQUAL_INT(true, Leds_IsOn(led));
-}
 
 // veo los limites de los parametros.
-
+void test_Off1() {
+    const int led = 1;
+    Leds_AllOn();
+    Leds_Off(led);
+    TEST_ASSERT_EQUAL_HEX16(~(1 << (led - 1)), leds);
+}
 void test_On1() {
     const int led = 1;
     Leds_On(led);
@@ -64,13 +62,13 @@ void test_On16() {
     TEST_ASSERT_EQUAL_HEX16(1 << (led - 1), leds);
 }
 
-void test_Off1() {
-    const int led = 1;
-    Leds_AllOn();
-    Leds_Off(led);
-    TEST_ASSERT_EQUAL_HEX16(~(1 << (led - 1)), leds);
+// testeo el estado de 1 led
+void test_IsOn() {
+    const int led = 2;
+    TEST_ASSERT_EQUAL_INT(false, Leds_IsOn(led));
+    Leds_On(led);
+    TEST_ASSERT_EQUAL_INT(true, Leds_IsOn(led));
 }
-
 void test_Off16() {
     const int led = 16;
     Leds_AllOn();
