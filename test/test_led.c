@@ -7,9 +7,12 @@
 #include "leds.h"
 
 static uint16_t leds = 0xffff;
-void setUp() {  Leds_Create(&leds); }
+void setUp() {  
+    Leds_Create(&leds); 
+ }
 
-void tearDown() {     }
+void tearDown() {  
+ }
 
 // apago todos los leds
 void test_LedsOffAfterCreate() {
